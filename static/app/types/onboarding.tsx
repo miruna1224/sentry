@@ -1,3 +1,5 @@
+import {WithRouterProps} from 'react-router';
+
 import {Organization, Project} from 'sentry/types';
 import {OnboardingState} from 'sentry/views/onboarding/targetedOnboarding/types';
 
@@ -66,7 +68,7 @@ export type OnboardingTaskDescriptor = {
       location: string;
     }
   | {
-      action: () => void;
+      action: (props: WithRouterProps) => void;
       actionType: 'action';
     }
 );
