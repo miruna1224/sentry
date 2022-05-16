@@ -110,6 +110,7 @@ function PerformanceOnboardingSidebar(props: CommonSidebarProps) {
     return null;
   }
 
+  // TODO: this should be list of projects that haven't sent a transaction
   const items: MenuItemProps[] = projects.reduce((acc: MenuItemProps[], project) => {
     const itemProps: MenuItemProps = {
       key: project.id,
